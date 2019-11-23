@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.11.16.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.11.16\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
     </Reference>
@@ -55,6 +58,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\entities\Alerts.cs" />
+    <Compile Include="controllers\IdController.cs" />
     <Compile Include="ui\IDForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +68,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="webCrawler\WebCrawler.cs" />
     <EmbeddedResource Include="ui\IDForm.resx">
       <DependentUpon>IDForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,6 +80,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -90,13 +97,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="controllers\" />
-    <Folder Include="images\background\" />
     <Folder Include="images\operators\" />
-    <Folder Include="webCrawler\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
+    <None Include="images\icons\23700.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\a50ba732.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\playstation-icon-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\background\1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

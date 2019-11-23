@@ -1,4 +1,7 @@
-﻿using System;
+﻿using R6Stats.controllers;
+using R6Stats.controllers.entities;
+using R6Stats.webCrawler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +15,8 @@ namespace R6Stats
 {
     public partial class IDForm : Form
     {
+        Alerts alerts = new Alerts();
+
         public IDForm()
         {
             InitializeComponent();
@@ -27,7 +32,30 @@ namespace R6Stats
             Random random = new Random();
             int imagem = random.Next(1, 6);
 
-            background.Image = Image.FromFile(Application.StartupPath + "\\images\\background\\" + imagem + ".jpg");
+            this.BackgroundImage = Image.FromFile(Application.StartupPath + "\\images\\background\\" + imagem + ".jpg");
+        }
+
+        private void procurar_Click(object sender, EventArgs e)
+        {
+            string plat = "";
+            if (pcRadio.Checked)
+            {
+                plat = "pc";
+            } else if (psRadio.Checked)
+            {
+                plat = "psn";
+            } else if (xboxRadio.Checked)
+            {
+                plat = "xbox";
+            }
+            WebCrawler.StartCrawler(plat, idTextBox.Text);
+
+            if (!IdController.GetExiste())
+            {
+                string message = "Id de jogador não encontrado";
+                string caption = "Erro";
+                alerts.Alert(message, caption);
+            }
         }
     }
 }
