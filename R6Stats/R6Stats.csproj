@@ -66,8 +66,14 @@
     <Compile Include="ui\IDForm.Designer.cs">
       <DependentUpon>IDForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="main\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ui\StatsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\StatsForm.Designer.cs">
+      <DependentUpon>StatsForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="webCrawler\WebCrawler.cs" />
     <EmbeddedResource Include="ui\IDForm.resx">
       <DependentUpon>IDForm.cs</DependentUpon>
@@ -82,6 +88,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ui\StatsForm.resx">
+      <DependentUpon>StatsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

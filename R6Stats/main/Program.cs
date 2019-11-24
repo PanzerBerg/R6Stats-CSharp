@@ -8,6 +8,8 @@ namespace R6Stats
 {
     static class Program
     {
+        public static ApplicationContext Context { get; set; }
+
         /// <summary>
         /// Ponto de entrada principal para o aplicativo.
         /// </summary>
@@ -16,7 +18,9 @@ namespace R6Stats
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new IDForm());
+
+            Context = new ApplicationContext(new IDForm());
+            Application.Run(Context);
         }
     }
 }

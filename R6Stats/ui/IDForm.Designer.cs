@@ -55,6 +55,7 @@
             // 
             this.pcRadio.AutoSize = true;
             this.pcRadio.BackColor = System.Drawing.Color.Gray;
+            this.pcRadio.Checked = true;
             this.pcRadio.Location = new System.Drawing.Point(514, 179);
             this.pcRadio.Name = "pcRadio";
             this.pcRadio.Size = new System.Drawing.Size(14, 13);
@@ -71,7 +72,6 @@
             this.psRadio.Name = "psRadio";
             this.psRadio.Size = new System.Drawing.Size(14, 13);
             this.psRadio.TabIndex = 4;
-            this.psRadio.TabStop = true;
             this.psRadio.UseVisualStyleBackColor = false;
             // 
             // xboxRadio
@@ -82,7 +82,6 @@
             this.xboxRadio.Name = "xboxRadio";
             this.xboxRadio.Size = new System.Drawing.Size(14, 13);
             this.xboxRadio.TabIndex = 5;
-            this.xboxRadio.TabStop = true;
             this.xboxRadio.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
@@ -144,7 +143,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Gray;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(531, 128);
+            this.label1.Location = new System.Drawing.Point(526, 128);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 17);
             this.label1.TabIndex = 11;

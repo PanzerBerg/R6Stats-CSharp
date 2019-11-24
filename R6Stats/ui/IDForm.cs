@@ -1,5 +1,6 @@
 ﻿using R6Stats.controllers;
 using R6Stats.controllers.entities;
+using R6Stats.ui;
 using R6Stats.webCrawler;
 using System;
 using System.Collections.Generic;
@@ -25,6 +26,13 @@ namespace R6Stats
         private void R6Stats_Load(object sender, EventArgs e)
         {
             ChangeBackground();
+        }
+
+        private void TrocarForm()
+        {
+            Program.Context.MainForm = new StatsForm();
+            this.Close();
+            Program.Context.MainForm.Show();
         }
 
         private void ChangeBackground()
@@ -55,7 +63,11 @@ namespace R6Stats
                 string message = "Id de jogador não encontrado";
                 string caption = "Erro";
                 alerts.Alert(message, caption);
+            } else
+            {
+                TrocarForm();
             }
         }
+
     }
 }
