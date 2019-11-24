@@ -120,5 +120,14 @@
   <ItemGroup>
     <None Include="images\background\1.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\icon_trading-19-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\trophy__icon__vector__eps-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Skull-512.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

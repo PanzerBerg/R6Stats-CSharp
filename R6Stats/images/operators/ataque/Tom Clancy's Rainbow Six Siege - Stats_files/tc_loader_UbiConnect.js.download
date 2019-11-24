@@ -1,0 +1,7 @@
+var a = Math.random() * 10000000000000;
+var script = document.createElement("script");
+script.setAttribute("type", "text/javascript");
+script.setAttribute("src", "//ubistatic2-a.akamaihd.net/worldwide_analytics/tagcommander/UbisoftConnect/tc_scripts_UbiConnect.js?rand=" + a);
+script.setAttribute("async", "");
+script.async=true;
+document.body.appendChild(script);

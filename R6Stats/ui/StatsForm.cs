@@ -21,12 +21,24 @@ namespace R6Stats.ui
         private void StatsForm_Load(object sender, EventArgs e)
         {
             SetImages();
+            SetStats();
+        }
+
+        private void SetStats()
+        {
+            ataqueOpTime.Text = IdController.OpAtqTime;
+            ataqueOpWL.Text = IdController.OpAtqWL;
+            ataqueOpKD.Text = IdController.OpAtqKD;
+
+            defesaOpTime.Text = IdController.OpDefTime;
+            defesaOpWL.Text = IdController.OpDefWL;
+            defesaOpKD.Text = IdController.OpDefKD;
         }
 
         private void SetImages()
         {
-            string ataque = IdController.GetOpAtq().ToLower();
-            string defesa = IdController.GetOpDef().ToLower();
+            string ataque = IdController.OpAtq.ToLower();
+            string defesa = IdController.OpDef.ToLower();
 
             ataquePicture.BackColor = Color.Transparent;
             defesaPicture.BackColor = Color.Transparent;

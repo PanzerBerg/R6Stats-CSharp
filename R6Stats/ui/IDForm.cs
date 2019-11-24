@@ -58,7 +58,7 @@ namespace R6Stats
             }
             WebCrawler.StartCrawler(plat, idTextBox.Text);
 
-            if (!IdController.GetExiste())
+            if (!IdController.Existe)
             {
                 string message = "Id de jogador não encontrado";
                 string caption = "Erro";
