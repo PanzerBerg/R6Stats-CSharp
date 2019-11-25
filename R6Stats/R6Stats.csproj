@@ -60,6 +60,12 @@
   <ItemGroup>
     <Compile Include="controllers\entities\Alerts.cs" />
     <Compile Include="controllers\IdController.cs" />
+    <Compile Include="ui\CircularProgressBar.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ui\CircularProgressBar.Designer.cs">
+      <DependentUpon>CircularProgressBar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ui\IDForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
       <DependentUpon>StatsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="webCrawler\WebCrawler.cs" />
+    <EmbeddedResource Include="ui\CircularProgressBar.resx">
+      <DependentUpon>CircularProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui\IDForm.resx">
       <DependentUpon>IDForm.cs</DependentUpon>
     </EmbeddedResource>

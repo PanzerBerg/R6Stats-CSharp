@@ -11,6 +11,18 @@ namespace R6Stats.controllers
         private static bool existe;
         public static bool Existe { get => existe; set => existe = value; }
 
+        private static string contaWins;
+        public static string ContaWins { get => contaWins; set => contaWins = value; }
+
+        private static string contaLosses;
+        public static string ContaLosses { get => contaLosses; set => contaLosses = value; }
+
+        private static string contaWL;
+        public static string ContaWL { get => contaWL; set => contaWL = value; }
+
+        private static string contaKD;
+        public static string ContaKD { get => contaKD; set => contaKD = value; }
+
         private static string opDef;
         public static string OpDef { get => opDef; set => opDef = value; }
 
@@ -52,8 +64,10 @@ namespace R6Stats.controllers
         {
             double atqWl = double.Parse(opAtqWins) / double.Parse(opAtqLosses);
             double defWl = double.Parse(opDefWins) / double.Parse(opDefLosses);
+            double contaWl = double.Parse(contaWins.Replace(",", "")) / double.Parse(contaLosses.Replace(",", ""));
             opAtqWL = String.Format("{0:0.00}", atqWl);
             opDefWL = String.Format("{0:0.00}", defWl);
+            contaWL = String.Format("{0:0.00}", contaWl);
         }
 
     }

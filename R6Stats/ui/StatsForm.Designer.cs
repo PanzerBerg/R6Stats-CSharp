@@ -50,6 +50,8 @@ namespace R6Stats.ui
             this.defesaOpKD = new System.Windows.Forms.Label();
             this.defesaOpWL = new System.Windows.Forms.Label();
             this.defesaOpTime = new System.Windows.Forms.Label();
+            this.WLProgress = new R6Stats.ui.CircularProgressBar();
+            this.KDProgress = new R6Stats.ui.CircularProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -267,12 +269,28 @@ namespace R6Stats.ui
             this.defesaOpTime.Text = "00h 00m";
             this.defesaOpTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
+            // WLProgress
+            // 
+            this.WLProgress.Location = new System.Drawing.Point(19, 251);
+            this.WLProgress.Name = "WLProgress";
+            this.WLProgress.Size = new System.Drawing.Size(130, 130);
+            this.WLProgress.TabIndex = 20;
+            // 
+            // KDProgress
+            // 
+            this.KDProgress.Location = new System.Drawing.Point(610, 251);
+            this.KDProgress.Name = "KDProgress";
+            this.KDProgress.Size = new System.Drawing.Size(130, 130);
+            this.KDProgress.TabIndex = 21;
+            // 
             // StatsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gray;
+            this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(752, 393);
+            this.Controls.Add(this.KDProgress);
+            this.Controls.Add(this.WLProgress);
             this.Controls.Add(this.defesaOpKD);
             this.Controls.Add(this.defesaOpWL);
             this.Controls.Add(this.defesaOpTime);
@@ -332,5 +350,7 @@ namespace R6Stats.ui
         private System.Windows.Forms.Label defesaOpKD;
         private System.Windows.Forms.Label defesaOpWL;
         private System.Windows.Forms.Label defesaOpTime;
+        private CircularProgressBar WLProgress;
+        private CircularProgressBar KDProgress;
     }
 }

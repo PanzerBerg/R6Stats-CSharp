@@ -22,6 +22,41 @@ namespace R6Stats.ui
         {
             SetImages();
             SetStats();
+            UpdateProgress();
+        }
+
+        private void UpdateProgress()
+        {
+            Task.Run(() => 
+            {
+                double porcentage = (double.Parse(IdController.ContaWL) / 2) * 100; 
+                for(int num = 0; num <= porcentage; num++)
+                {
+                    new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(this.ProgressUpgradeWL)).Start(num) ;
+                    System.Threading.Thread.Sleep(30);
+                }
+            });
+
+            Task.Run(() =>
+            {
+                double porcentage = (double.Parse(IdController.ContaKD.Replace(".", ",")) / 2) * 100;
+                for (int num = 0; num <= porcentage; num++)
+                {
+                    new System.Threading.Thread(new System.Threading.ParameterizedThreadStart(this.ProgressUpgradeKD)).Start(num);
+                    System.Threading.Thread.Sleep(30);
+                }
+            });
+
+        }
+
+        private void ProgressUpgradeWL(object progress)
+        {
+            WLProgress.Invoke((MethodInvoker)delegate { WLProgress.UpdateProgress(Convert.ToInt32(progress)); });
+        }
+
+        private void ProgressUpgradeKD(object progress)
+        {
+            KDProgress.Invoke((MethodInvoker)delegate { KDProgress.UpdateProgress(Convert.ToInt32(progress)); });
         }
 
         private void SetStats()

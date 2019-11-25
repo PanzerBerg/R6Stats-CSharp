@@ -20,17 +20,35 @@ namespace R6Stats.webCrawler
             var doc = htmlWeb.Load(url);
 
             var value = doc.DocumentNode.SelectSingleNode("/html/body/div[2]/div[3]/div/div[1]");
-            var ops = doc.DocumentNode.SelectSingleNode("/html/body/div[2]/div[3]/div/div[1]");
 
             if (value == null)
             {
                 IdController.Existe = true;
                 SetOpsStats(plat, id);
-            } else if (value.InnerText.Equals("404 Not Found. We are unable to find your profile."))
+                SetContaStats(url);
+                IdController.WinRatio();
+            }
+            else if (value.InnerText.Equals("404 Not Found. We are unable to find your profile."))
             {
                 IdController.Existe = false;
             }
                         
+        }
+
+        private static void SetContaStats(string url)
+        {
+            var htmlWeb = new HtmlWeb();
+            var doc = htmlWeb.Load(url);
+
+            var contaWins = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[5]/div[2]");
+            var contaLosses = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[6]/div[2]");
+
+            var contaKD = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[3]/div[2]");
+
+            IdController.ContaWins = contaWins.FirstOrDefault().InnerText.Trim();
+            IdController.ContaLosses = contaLosses.FirstOrDefault().InnerText.Trim();
+
+            IdController.ContaKD = contaKD.FirstOrDefault().InnerText.Trim();
         }
 
         private static void SetOpsStats(string plat, string id)
@@ -62,8 +80,6 @@ namespace R6Stats.webCrawler
             IdController.OpDefKD = op_def_kd.FirstOrDefault().InnerText.Trim();
             IdController.OpDefWins = op_def_wins.FirstOrDefault().InnerText.Trim();
             IdController.OpDefLosses = op_def_losses.FirstOrDefault().InnerText.Trim();
-
-            IdController.WinRatio();
 
             if (op_def.FirstOrDefault().InnerText.Trim().Equals("J&#196;GER"))
             {
