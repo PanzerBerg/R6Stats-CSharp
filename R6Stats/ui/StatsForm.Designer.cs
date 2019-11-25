@@ -50,8 +50,12 @@ namespace R6Stats.ui
             this.defesaOpKD = new System.Windows.Forms.Label();
             this.defesaOpWL = new System.Windows.Forms.Label();
             this.defesaOpTime = new System.Windows.Forms.Label();
-            this.WLProgress = new R6Stats.ui.CircularProgressBar();
+            this.uiCircle2 = new R6Stats.ui.UiCircle();
+            this.uiCircle1 = new R6Stats.ui.UiCircle();
             this.KDProgress = new R6Stats.ui.CircularProgressBar();
+            this.WLProgress = new R6Stats.ui.CircularProgressBar();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -62,6 +66,8 @@ namespace R6Stats.ui
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // ataqueOpLabel
@@ -93,6 +99,7 @@ namespace R6Stats.ui
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label2.Location = new System.Drawing.Point(16, 34);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(115, 13);
@@ -103,6 +110,7 @@ namespace R6Stats.ui
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.label3.Location = new System.Drawing.Point(618, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(115, 13);
@@ -215,6 +223,7 @@ namespace R6Stats.ui
             // ataqueOpTime
             // 
             this.ataqueOpTime.AutoSize = true;
+            this.ataqueOpTime.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ataqueOpTime.Location = new System.Drawing.Point(49, 153);
             this.ataqueOpTime.Name = "ataqueOpTime";
             this.ataqueOpTime.Size = new System.Drawing.Size(48, 13);
@@ -224,6 +233,7 @@ namespace R6Stats.ui
             // ataqueOpWL
             // 
             this.ataqueOpWL.AutoSize = true;
+            this.ataqueOpWL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ataqueOpWL.Location = new System.Drawing.Point(49, 183);
             this.ataqueOpWL.Name = "ataqueOpWL";
             this.ataqueOpWL.Size = new System.Drawing.Size(28, 13);
@@ -233,6 +243,7 @@ namespace R6Stats.ui
             // ataqueOpKD
             // 
             this.ataqueOpKD.AutoSize = true;
+            this.ataqueOpKD.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.ataqueOpKD.Location = new System.Drawing.Point(49, 213);
             this.ataqueOpKD.Name = "ataqueOpKD";
             this.ataqueOpKD.Size = new System.Drawing.Size(28, 13);
@@ -242,6 +253,7 @@ namespace R6Stats.ui
             // defesaOpKD
             // 
             this.defesaOpKD.AutoSize = true;
+            this.defesaOpKD.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.defesaOpKD.Location = new System.Drawing.Point(675, 213);
             this.defesaOpKD.Name = "defesaOpKD";
             this.defesaOpKD.Size = new System.Drawing.Size(28, 13);
@@ -252,6 +264,7 @@ namespace R6Stats.ui
             // defesaOpWL
             // 
             this.defesaOpWL.AutoSize = true;
+            this.defesaOpWL.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.defesaOpWL.Location = new System.Drawing.Point(675, 183);
             this.defesaOpWL.Name = "defesaOpWL";
             this.defesaOpWL.Size = new System.Drawing.Size(28, 13);
@@ -262,6 +275,7 @@ namespace R6Stats.ui
             // defesaOpTime
             // 
             this.defesaOpTime.AutoSize = true;
+            this.defesaOpTime.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.defesaOpTime.Location = new System.Drawing.Point(655, 153);
             this.defesaOpTime.Name = "defesaOpTime";
             this.defesaOpTime.Size = new System.Drawing.Size(48, 13);
@@ -269,12 +283,19 @@ namespace R6Stats.ui
             this.defesaOpTime.Text = "00h 00m";
             this.defesaOpTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // WLProgress
+            // uiCircle2
             // 
-            this.WLProgress.Location = new System.Drawing.Point(19, 251);
-            this.WLProgress.Name = "WLProgress";
-            this.WLProgress.Size = new System.Drawing.Size(130, 130);
-            this.WLProgress.TabIndex = 20;
+            this.uiCircle2.Location = new System.Drawing.Point(655, 257);
+            this.uiCircle2.Name = "uiCircle2";
+            this.uiCircle2.Size = new System.Drawing.Size(40, 40);
+            this.uiCircle2.TabIndex = 23;
+            // 
+            // uiCircle1
+            // 
+            this.uiCircle1.Location = new System.Drawing.Point(64, 257);
+            this.uiCircle1.Name = "uiCircle1";
+            this.uiCircle1.Size = new System.Drawing.Size(40, 40);
+            this.uiCircle1.TabIndex = 22;
             // 
             // KDProgress
             // 
@@ -283,12 +304,43 @@ namespace R6Stats.ui
             this.KDProgress.Size = new System.Drawing.Size(130, 130);
             this.KDProgress.TabIndex = 21;
             // 
+            // WLProgress
+            // 
+            this.WLProgress.Location = new System.Drawing.Point(19, 251);
+            this.WLProgress.Name = "WLProgress";
+            this.WLProgress.Size = new System.Drawing.Size(130, 130);
+            this.WLProgress.TabIndex = 20;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = global::R6Stats.Properties.Resources.Skull_512;
+            this.pictureBox7.Location = new System.Drawing.Point(664, 266);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox7.TabIndex = 24;
+            this.pictureBox7.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::R6Stats.Properties.Resources.trophy__icon__vector__eps_512;
+            this.pictureBox8.Location = new System.Drawing.Point(73, 266);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 25;
+            this.pictureBox8.TabStop = false;
+            // 
             // StatsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(752, 393);
+            this.Controls.Add(this.pictureBox8);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.uiCircle2);
+            this.Controls.Add(this.uiCircle1);
             this.Controls.Add(this.KDProgress);
             this.Controls.Add(this.WLProgress);
             this.Controls.Add(this.defesaOpKD);
@@ -324,6 +376,8 @@ namespace R6Stats.ui
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -352,5 +406,9 @@ namespace R6Stats.ui
         private System.Windows.Forms.Label defesaOpTime;
         private CircularProgressBar WLProgress;
         private CircularProgressBar KDProgress;
+        private UiCircle uiCircle1;
+        private UiCircle uiCircle2;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
     }
 }
