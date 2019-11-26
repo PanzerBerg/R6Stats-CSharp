@@ -51,12 +51,34 @@ namespace R6Stats.ui
 
         private void ProgressUpgradeWL(object progress)
         {
-            WLProgress.Invoke((MethodInvoker)delegate { WLProgress.UpdateProgress(Convert.ToInt32(progress)); });
+            try
+            {
+                WLProgress.Invoke((MethodInvoker)delegate { WLProgress.UpdateProgress(Convert.ToInt32(progress)); });
+            } catch (InvalidOperationException e)
+            {
+                Console.WriteLine("Closing application: " + e.Message);
+                Application.Exit();
+            } catch (InvalidAsynchronousStateException e)
+            {
+                Console.WriteLine("Closing application: " + e.Message);
+                Application.Exit();
+            }
         }
 
         private void ProgressUpgradeKD(object progress)
         {
-            KDProgress.Invoke((MethodInvoker)delegate { KDProgress.UpdateProgress(Convert.ToInt32(progress)); });
+            try
+            {
+                KDProgress.Invoke((MethodInvoker)delegate { KDProgress.UpdateProgress(Convert.ToInt32(progress)); });
+            } catch (InvalidOperationException e)
+            {
+                Console.WriteLine("Closing application: " + e.Message);
+                Application.Exit();
+            } catch (InvalidAsynchronousStateException e)
+            {
+                Console.WriteLine("Closing application: " + e.Message);
+                Application.Exit();
+            }
         }
 
         private void SetStats()
@@ -80,7 +102,7 @@ namespace R6Stats.ui
             ataquePicture.Parent = defesaPicture;
             ataquePicture.Size = new Size(480, 800);
             defesaPicture.Size = new Size(800, 800);
-            defesaPicture.Location = new Point(100, -80);
+            defesaPicture.Location = new Point(100, -60);
             ataquePicture.Location = new Point (-30, -2);
 
             ataquePicture.Image = Image.FromFile(Application.StartupPath + "\\images\\operators\\ataque\\" + ataque + ".png");

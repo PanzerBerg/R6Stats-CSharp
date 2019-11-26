@@ -151,6 +151,7 @@
             // 
             // IDForm
             // 
+            this.AcceptButton = this.procurar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
@@ -168,6 +169,7 @@
             this.Controls.Add(this.pictureBox4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "IDForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "R6Stats";
             this.Load += new System.EventHandler(this.R6Stats_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
