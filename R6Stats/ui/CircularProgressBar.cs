@@ -12,10 +12,10 @@ namespace R6Stats.ui
 {
     public partial class CircularProgressBar : UserControl
     {
-        double progress = 20;
+        double progress;
         public CircularProgressBar()
         {
-            progress = 20;
+            progress = 0;
             InitializeComponent();
         }
 

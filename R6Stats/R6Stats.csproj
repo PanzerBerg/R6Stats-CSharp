@@ -147,5 +147,17 @@
   <ItemGroup>
     <None Include="images\icons\Skull-512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\aim-icon-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\icon_trading-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\Skull-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\icons\trophy_icon_white.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

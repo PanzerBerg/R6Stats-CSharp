@@ -93,9 +93,29 @@ namespace R6Stats.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap aim_icon_white {
+            get {
+                object obj = ResourceManager.GetObject("aim-icon-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_trading_19_512 {
             get {
                 object obj = ResourceManager.GetObject("icon_trading-19-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_trading_white {
+            get {
+                object obj = ResourceManager.GetObject("icon_trading-white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -123,9 +143,29 @@ namespace R6Stats.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Skull_white {
+            get {
+                object obj = ResourceManager.GetObject("Skull-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap trophy__icon__vector__eps_512 {
             get {
                 object obj = ResourceManager.GetObject("trophy__icon__vector__eps-512", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trophy_icon_white {
+            get {
+                object obj = ResourceManager.GetObject("trophy_icon_white", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
