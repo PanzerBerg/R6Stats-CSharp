@@ -11,6 +11,7 @@ namespace R6Stats.webCrawler
 {
     static class WebCrawler
     {
+
         public static void StartCrawler(string plat, string id)
         {
             
@@ -42,13 +43,15 @@ namespace R6Stats.webCrawler
 
             var contaWins = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[5]/div[2]");
             var contaLosses = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[6]/div[2]");
-
             var contaKD = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[3]/div[1]/div[2]/div[2]/div/div[3]/div[2]");
+
+            var contaNome = doc.DocumentNode.SelectNodes("/html/body/div[3]/div[2]/div[1]/div/h1/span");
 
             IdController.ContaWins = contaWins.FirstOrDefault().InnerText.Trim();
             IdController.ContaLosses = contaLosses.FirstOrDefault().InnerText.Trim();
-
             IdController.ContaKD = contaKD.FirstOrDefault().InnerText.Trim();
+
+            IdController.ContaName = contaNome.FirstOrDefault().InnerText.Trim();
         }
 
         private static void SetOpsStats(string plat, string id)

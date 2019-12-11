@@ -103,6 +103,26 @@ namespace R6Stats.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap AtqWhite {
+            get {
+                object obj = ResourceManager.GetObject("AtqWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap DefWhite {
+            get {
+                object obj = ResourceManager.GetObject("DefWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icon_trading_19_512 {
             get {
                 object obj = ResourceManager.GetObject("icon_trading-19-512", resourceCulture);

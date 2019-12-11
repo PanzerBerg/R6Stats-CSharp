@@ -53,5 +53,6 @@ namespace R6Stats.ui
             this.progress = progress;
             this.Invalidate();
         }
+
     }
 }

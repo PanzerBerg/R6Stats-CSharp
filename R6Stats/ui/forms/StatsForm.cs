@@ -1,4 +1,5 @@
 ﻿using R6Stats.controllers;
+using R6Stats.ui.forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -90,6 +91,8 @@ namespace R6Stats.ui
             defesaOpTime.Text = IdController.OpDefTime;
             defesaOpWL.Text = IdController.OpDefWL;
             defesaOpKD.Text = IdController.OpDefKD;
+
+            nameLabel.Text = IdController.ContaName;
         }
 
         private void SetImages()
@@ -116,5 +119,29 @@ namespace R6Stats.ui
             defesaOpLabel.Text = defesa.ToUpper();
         }
 
+        private void TrocaFrom(Form form)
+        {
+            Program.Context.MainForm = form;
+            this.Close();
+            Program.Context.MainForm.Show();
+        }
+
+        private void Attack_Click(object sender, EventArgs e)
+        {
+            Form form = new AttackersForm();
+            TrocaFrom(form);
+        }
+
+        private void Deffense_Click(object sender, EventArgs e)
+        {
+            Form form = new DeffendersForm();
+            TrocaFrom(form);
+        }
+
+        private void Account_Click(object sender, EventArgs e)
+        {
+            Form form = new AccountForm();
+            TrocaFrom(form);
+        }
     }
 }

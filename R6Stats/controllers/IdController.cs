@@ -8,57 +8,49 @@ namespace R6Stats.controllers
 {
     static class IdController
     {
-        private static bool existe;
-        public static bool Existe { get => existe; set => existe = value; }
-
+        private static bool   existe;
         private static string contaWins;
-        public static string ContaWins { get => contaWins; set => contaWins = value; }
-
         private static string contaLosses;
-        public static string ContaLosses { get => contaLosses; set => contaLosses = value; }
-
         private static string contaWL;
-        public static string ContaWL { get => contaWL; set => contaWL = value; }
-
         private static string contaKD;
-        public static string ContaKD { get => contaKD; set => contaKD = value; }
+        private static string contaName;
+        private static string contaXP;
 
         private static string opDef;
-        public static string OpDef { get => opDef; set => opDef = value; }
+        private static string opDefTime;
+        private static string opDefKD;
+        private static string opDefWins;
+        private static string opDefLosses;
+        private static string opDefWL;
 
         private static string opAtq;
-        public static string OpAtq { get => opAtq; set => opAtq = value; }
-
         private static string opAtqTime;
-        public static string OpAtqTime { get => opAtqTime; set => opAtqTime = value; }
-
-        private static string opDefTime;
-        public static string OpDefTime { get => opDefTime; set => opDefTime = value; }
-
         private static string opAtqKD;
-        public static string OpAtqKD { get => opAtqKD; set => opAtqKD = value; }
-
-        private static string opDefKD;
-        public static string OpDefKD { get => opDefKD; set => opDefKD = value; }
-
         private static string opAtqWins;
-        public static string OpAtqWins { get => opAtqWins; set => opAtqWins = value; }
-
         private static string opAtqLosses;
-        public static string OpAtqLosses { get => opAtqLosses; set => opAtqLosses = value; }
-
-        private static string opDefWins;
-        public static string OpDefWins { get => opDefWins; set => opDefWins = value; }
-
-        private static string opDefLosses;
-        public static string OpDefLosses { get => opDefLosses; set => opDefLosses = value; }
-
         private static string opAtqWL;
-        public static string OpAtqWL { get => opAtqWL; set => opAtqWL = value; }
 
-        private static string opDefWL;
-        public static string OpDefWL { get => opDefWL; set => opDefWL = value; }
+        public static bool   Existe         { get => existe; set => existe = value; }
+        public static string ContaWins      { get => contaWins; set => contaWins = value; }
+        public static string ContaLosses    { get => contaLosses; set => contaLosses = value; }
+        public static string ContaWL        { get => contaWL; set => contaWL = value; }
+        public static string ContaKD        { get => contaKD; set => contaKD = value; }
+        public static string ContaName      { get => contaName; set => contaName = value; }
+        public static string ContaXP       { get => contaXP; set => contaXP = value; }
 
+        public static string OpDef          { get => opDef; set => opDef = value; }
+        public static string OpDefTime      { get => opDefTime; set => opDefTime = value; }
+        public static string OpDefKD        { get => opDefKD; set => opDefKD = value; }
+        public static string OpDefWins      { get => opDefWins; set => opDefWins = value; }
+        public static string OpDefLosses    { get => opDefLosses; set => opDefLosses = value; }
+        public static string OpDefWL        { get => opDefWL; set => opDefWL = value; }
+
+        public static string OpAtq          { get => opAtq; set => opAtq = value; }
+        public static string OpAtqTime      { get => opAtqTime; set => opAtqTime = value; }
+        public static string OpAtqKD        { get => opAtqKD; set => opAtqKD = value; }
+        public static string OpAtqWins      { get => opAtqWins; set => opAtqWins = value; }
+        public static string OpAtqLosses    { get => opAtqLosses; set => opAtqLosses = value; }
+        public static string OpAtqWL        { get => opAtqWL; set => opAtqWL = value; }
 
         public static void WinRatio()
         {
