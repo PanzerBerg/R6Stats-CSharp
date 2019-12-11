@@ -143,6 +143,16 @@ namespace R6Stats.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap jackal {
+            get {
+                object obj = ResourceManager.GetObject("jackal", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap playstation_icon_10 {
             get {
                 object obj = ResourceManager.GetObject("playstation-icon-10", resourceCulture);

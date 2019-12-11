@@ -206,9 +206,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="images\operators\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="images\icons\23700.png" />
   </ItemGroup>
@@ -247,6 +245,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="images\icons\DefWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\operators\ataque\jackal.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

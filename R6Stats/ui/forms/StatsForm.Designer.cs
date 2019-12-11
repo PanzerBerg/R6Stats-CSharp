@@ -40,12 +40,10 @@ namespace R6Stats.ui
             this.defesaOpKD = new System.Windows.Forms.Label();
             this.defesaOpWL = new System.Windows.Forms.Label();
             this.defesaOpTime = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.nameLabel = new System.Windows.Forms.Label();
             this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -57,16 +55,17 @@ namespace R6Stats.ui
             this.ataqueOpIcon = new System.Windows.Forms.PictureBox();
             this.ataquePicture = new System.Windows.Forms.PictureBox();
             this.defesaPicture = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.uiCircle4 = new R6Stats.ui.UiCircle();
             this.uiCircle3 = new R6Stats.ui.UiCircle();
             this.uiCircle2 = new R6Stats.ui.UiCircle();
-            this.uiCircle1 = new R6Stats.ui.UiCircle();
             this.KDProgress = new R6Stats.ui.CircularProgressBar();
             this.WLProgress = new R6Stats.ui.CircularProgressBar();
-            this.label5 = new System.Windows.Forms.Label();
+            this.uiCircle1 = new R6Stats.ui.UiCircle();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -78,6 +77,7 @@ namespace R6Stats.ui
             ((System.ComponentModel.ISupportInitialize)(this.ataqueOpIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ataquePicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.defesaPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // ataqueOpLabel
@@ -190,17 +190,6 @@ namespace R6Stats.ui
             this.defesaOpTime.Text = "00h 00m";
             this.defesaOpTime.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.LightGray;
-            this.label1.Location = new System.Drawing.Point(52, 350);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 11);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "PROPORÇÃO V/D";
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -251,17 +240,6 @@ namespace R6Stats.ui
             this.pictureBox9.TabIndex = 32;
             this.pictureBox9.TabStop = false;
             this.pictureBox9.Click += new System.EventHandler(this.Attack_Click);
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
-            this.pictureBox8.Image = global::R6Stats.Properties.Resources.trophy_icon_white;
-            this.pictureBox8.Location = new System.Drawing.Point(73, 284);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox8.TabIndex = 25;
-            this.pictureBox8.TabStop = false;
             // 
             // pictureBox7
             // 
@@ -377,6 +355,19 @@ namespace R6Stats.ui
             this.defesaPicture.TabIndex = 0;
             this.defesaPicture.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(416, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 17);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Procurar novamente.";
+            this.label5.Click += new System.EventHandler(this.search_Click);
+            // 
             // uiCircle4
             // 
             this.uiCircle4.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -402,13 +393,6 @@ namespace R6Stats.ui
             this.uiCircle2.Size = new System.Drawing.Size(40, 40);
             this.uiCircle2.TabIndex = 23;
             // 
-            // uiCircle1
-            // 
-            this.uiCircle1.Location = new System.Drawing.Point(64, 275);
-            this.uiCircle1.Name = "uiCircle1";
-            this.uiCircle1.Size = new System.Drawing.Size(40, 40);
-            this.uiCircle1.TabIndex = 22;
-            // 
             // KDProgress
             // 
             this.KDProgress.Location = new System.Drawing.Point(610, 269);
@@ -423,18 +407,34 @@ namespace R6Stats.ui
             this.WLProgress.Size = new System.Drawing.Size(130, 130);
             this.WLProgress.TabIndex = 20;
             // 
-            // label5
+            // uiCircle1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label5.Location = new System.Drawing.Point(416, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(160, 17);
-            this.label5.TabIndex = 34;
-            this.label5.Text = "Procurar novamente.";
-            this.label5.Click += new System.EventHandler(this.search_Click);
+            this.uiCircle1.Location = new System.Drawing.Point(64, 275);
+            this.uiCircle1.Name = "uiCircle1";
+            this.uiCircle1.Size = new System.Drawing.Size(40, 40);
+            this.uiCircle1.TabIndex = 22;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(36)))), ((int)(((byte)(42)))));
+            this.pictureBox8.Image = global::R6Stats.Properties.Resources.trophy_icon_white;
+            this.pictureBox8.Location = new System.Drawing.Point(73, 284);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(24, 24);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox8.TabIndex = 25;
+            this.pictureBox8.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.LightGray;
+            this.label1.Location = new System.Drawing.Point(52, 350);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(67, 11);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "PROPORÇÃO V/D";
             // 
             // StatsForm
             // 
@@ -483,7 +483,6 @@ namespace R6Stats.ui
             this.Load += new System.EventHandler(this.StatsForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
@@ -495,6 +494,7 @@ namespace R6Stats.ui
             ((System.ComponentModel.ISupportInitialize)(this.ataqueOpIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ataquePicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.defesaPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -521,13 +521,9 @@ namespace R6Stats.ui
         private System.Windows.Forms.Label defesaOpKD;
         private System.Windows.Forms.Label defesaOpWL;
         private System.Windows.Forms.Label defesaOpTime;
-        private CircularProgressBar WLProgress;
         private CircularProgressBar KDProgress;
-        private UiCircle uiCircle1;
         private UiCircle uiCircle2;
         private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label nameLabel;
         private UiCircle uiCircle3;
@@ -535,5 +531,9 @@ namespace R6Stats.ui
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
         private System.Windows.Forms.Label label5;
+        private CircularProgressBar WLProgress;
+        private UiCircle uiCircle1;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Label label1;
     }
 }

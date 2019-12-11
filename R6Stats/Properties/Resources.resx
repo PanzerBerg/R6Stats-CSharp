@@ -118,43 +118,46 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Skull-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\Skull-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="a50ba732" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\a50ba732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icon_trading-19-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons\icon_trading-19-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Skull-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\Skull-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="AtqWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\AtqWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="23700" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\23700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trophy_icon_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\trophy_icon_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="trophy__icon__vector__eps-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\trophy__icon__vector__eps-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="icon_trading-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\icon_trading-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="a50ba732" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\a50ba732.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="DefWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\DefWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\background\1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="AtqWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\AtqWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="playstation-icon-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\playstation-icon-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aim-icon-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\images\icons\aim-icon-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="playstation-icon-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\playstation-icon-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Skull-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\Skull-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="DefWhite" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\images\icons\DefWhite.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trophy__icon__vector__eps-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\trophy__icon__vector__eps-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="23700" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\23700.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Skull-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\Skull-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icon_trading-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\icon_trading-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trophy_icon_white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\icons\trophy_icon_white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="jackal" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\images\operators\ataque\jackal.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
