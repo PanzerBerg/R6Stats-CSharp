@@ -1,6 +1,6 @@
 ﻿namespace R6Stats.ui.forms
 {
-    partial class DeffendersForm
+    partial class DefendersForm
     {
         /// <summary>
         /// Required designer variable.

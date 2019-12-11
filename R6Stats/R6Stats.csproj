@@ -68,6 +68,58 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\attackers\Amaru.cs" />
+    <Compile Include="controllers\attackers\Ash.cs" />
+    <Compile Include="controllers\attackers\BlackBeard.cs" />
+    <Compile Include="controllers\attackers\Blitz.cs" />
+    <Compile Include="controllers\attackers\Buck.cs" />
+    <Compile Include="controllers\attackers\Capitao.cs" />
+    <Compile Include="controllers\attackers\Dokkaebi.cs" />
+    <Compile Include="controllers\attackers\Finka.cs" />
+    <Compile Include="controllers\attackers\Fuze.cs" />
+    <Compile Include="controllers\attackers\Glaz.cs" />
+    <Compile Include="controllers\attackers\Gridlock.cs" />
+    <Compile Include="controllers\attackers\Hibana.cs" />
+    <Compile Include="controllers\attackers\IQ.cs" />
+    <Compile Include="controllers\attackers\Jackal.cs" />
+    <Compile Include="controllers\attackers\Kali.cs" />
+    <Compile Include="controllers\attackers\Lion.cs" />
+    <Compile Include="controllers\attackers\Maverick.cs" />
+    <Compile Include="controllers\attackers\Montagne.cs" />
+    <Compile Include="controllers\attackers\Nokk.cs" />
+    <Compile Include="controllers\attackers\Nomad.cs" />
+    <Compile Include="controllers\attackers\Sledge.cs" />
+    <Compile Include="controllers\attackers\Thatcher.cs" />
+    <Compile Include="controllers\attackers\Thermite.cs" />
+    <Compile Include="controllers\attackers\Twitch.cs" />
+    <Compile Include="controllers\attackers\Ying.cs" />
+    <Compile Include="controllers\attackers\Zofia.cs" />
+    <Compile Include="controllers\defenders\Alibi.cs" />
+    <Compile Include="controllers\defenders\Bandit.cs" />
+    <Compile Include="controllers\defenders\Castle.cs" />
+    <Compile Include="controllers\defenders\Caveira.cs" />
+    <Compile Include="controllers\defenders\Clash.cs" />
+    <Compile Include="controllers\defenders\Doc.cs" />
+    <Compile Include="controllers\defenders\Echo.cs" />
+    <Compile Include="controllers\defenders\Ela.cs" />
+    <Compile Include="controllers\defenders\Frost.cs" />
+    <Compile Include="controllers\defenders\Goyo.cs" />
+    <Compile Include="controllers\defenders\Jager.cs" />
+    <Compile Include="controllers\defenders\Kaid.cs" />
+    <Compile Include="controllers\defenders\Kapkan.cs" />
+    <Compile Include="controllers\defenders\Lesion.cs" />
+    <Compile Include="controllers\defenders\Maestro.cs" />
+    <Compile Include="controllers\defenders\Mira.cs" />
+    <Compile Include="controllers\defenders\Mozzie.cs" />
+    <Compile Include="controllers\defenders\Mute.cs" />
+    <Compile Include="controllers\defenders\Pulse.cs" />
+    <Compile Include="controllers\defenders\Rook.cs" />
+    <Compile Include="controllers\defenders\Smoke.cs" />
+    <Compile Include="controllers\defenders\Tachanka.cs" />
+    <Compile Include="controllers\defenders\Valkyrie.cs" />
+    <Compile Include="controllers\defenders\Vigil.cs" />
+    <Compile Include="controllers\defenders\Wamai.cs" />
+    <Compile Include="controllers\defenders\Warden.cs" />
     <Compile Include="controllers\entities\Alerts.cs" />
     <Compile Include="controllers\IdController.cs" />
     <Compile Include="ui\forms\AccountForm.cs">
@@ -82,11 +134,11 @@
     <Compile Include="ui\forms\AttackersForm.Designer.cs">
       <DependentUpon>AttackersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ui\forms\DeffendersForm.cs">
+    <Compile Include="ui\forms\DefendersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ui\forms\DeffendersForm.Designer.cs">
-      <DependentUpon>DeffendersForm.cs</DependentUpon>
+    <Compile Include="ui\forms\DefendersForm.Designer.cs">
+      <DependentUpon>DefendersForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ui\uiElements\CircularProgressBar.cs">
       <SubType>UserControl</SubType>
@@ -115,6 +167,9 @@
       <DependentUpon>UiCircle.cs</DependentUpon>
     </Compile>
     <Compile Include="webCrawler\WebCrawler.cs" />
+    <EmbeddedResource Include="ui\forms\AttackersForm.resx">
+      <DependentUpon>AttackersForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ui\uiElements\CircularProgressBar.resx">
       <DependentUpon>CircularProgressBar.cs</DependentUpon>
     </EmbeddedResource>

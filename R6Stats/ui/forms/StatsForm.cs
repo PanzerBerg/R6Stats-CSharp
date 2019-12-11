@@ -134,13 +134,19 @@ namespace R6Stats.ui
 
         private void Deffense_Click(object sender, EventArgs e)
         {
-            Form form = new DeffendersForm();
+            Form form = new DefendersForm();
             TrocaFrom(form);
         }
 
         private void Account_Click(object sender, EventArgs e)
         {
             Form form = new AccountForm();
+            TrocaFrom(form);
+        }
+
+        private void search_Click(object sender, EventArgs e)
+        {
+            Form form = new IDForm();
             TrocaFrom(form);
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using R6Stats.webCrawler;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace R6Stats.ui.forms
         public AttackersForm()
         {
             InitializeComponent();
+        }
+
+        private void AttackersForm_Load(object sender, EventArgs e)
+        {
+            WebCrawler.AttackersAsync();
         }
     }
 }

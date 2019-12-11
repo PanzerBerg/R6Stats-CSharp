@@ -63,6 +63,7 @@ namespace R6Stats.ui
             this.uiCircle1 = new R6Stats.ui.UiCircle();
             this.KDProgress = new R6Stats.ui.CircularProgressBar();
             this.WLProgress = new R6Stats.ui.CircularProgressBar();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
@@ -217,11 +218,12 @@ namespace R6Stats.ui
             this.nameLabel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.nameLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nameLabel.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.nameLabel.Location = new System.Drawing.Point(338, 9);
+            this.nameLabel.Location = new System.Drawing.Point(208, 9);
             this.nameLabel.Name = "nameLabel";
             this.nameLabel.Size = new System.Drawing.Size(52, 17);
             this.nameLabel.TabIndex = 28;
             this.nameLabel.Text = "label5";
+            this.nameLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.nameLabel.Click += new System.EventHandler(this.Account_Click);
             // 
             // pictureBox10
@@ -421,12 +423,26 @@ namespace R6Stats.ui
             this.WLProgress.Size = new System.Drawing.Size(130, 130);
             this.WLProgress.TabIndex = 20;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.label5.Location = new System.Drawing.Point(416, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(160, 17);
+            this.label5.TabIndex = 34;
+            this.label5.Text = "Procurar novamente.";
+            this.label5.Click += new System.EventHandler(this.search_Click);
+            // 
             // StatsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(29)))), ((int)(((byte)(34)))));
             this.ClientSize = new System.Drawing.Size(752, 393);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox10);
             this.Controls.Add(this.pictureBox9);
             this.Controls.Add(this.uiCircle4);
@@ -518,5 +534,6 @@ namespace R6Stats.ui
         private UiCircle uiCircle4;
         private System.Windows.Forms.PictureBox pictureBox9;
         private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.Label label5;
     }
 }

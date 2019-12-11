@@ -43,7 +43,7 @@ namespace R6Stats
             this.BackgroundImage = Image.FromFile(Application.StartupPath + "\\images\\background\\" + imagem + ".jpg");
         }
 
-        private void procurar_Click(object sender, EventArgs e)
+        private async void procurar_Click(object sender, EventArgs e)
         {
             if (CheckTextBox())
             {
@@ -60,7 +60,7 @@ namespace R6Stats
                 {
                     plat = "xbox";
                 }
-                WebCrawler.StartCrawler(plat, idTextBox.Text.Trim());
+                await WebCrawler.StartCrawlerAsync(plat, idTextBox.Text.Trim());
                 
 
                 if (!IdController.Existe)
@@ -74,7 +74,8 @@ namespace R6Stats
                     IdController.ContaName = idTextBox.Text.Trim();
                     TrocarForm();
                 }
-            } 
+
+            }
         }
 
         private bool CheckTextBox()

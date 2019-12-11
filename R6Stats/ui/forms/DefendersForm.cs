@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace R6Stats.ui.forms
 {
-    public partial class DeffendersForm : Form
+    public partial class DefendersForm : Form
     {
-        public DeffendersForm()
+        public DefendersForm()
         {
             InitializeComponent();
         }
